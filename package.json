@@ -1,7 +1,7 @@
 {
   "name": "@zettelyay/web-desktop-shared",
   "description": "Zettel: Shared between Web & Desktop",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "files": [
     "dist/**"
   ],
@@ -48,7 +48,9 @@
   },
   "keywords": [
     "zettel",
-    "web","desktop","shared"
+    "web",
+    "desktop",
+    "shared"
   ],
   "author": {
     "name": "Zettel",
