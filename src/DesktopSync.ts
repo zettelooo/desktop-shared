@@ -1,4 +1,4 @@
-import { Keyboard } from '@zettelyay/commons'
+import { Keyboard } from '@zettelooo/commons'
 import { User } from './User'
 
 export namespace DesktopSync {

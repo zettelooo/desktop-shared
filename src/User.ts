@@ -1,4 +1,4 @@
-import { Id, Timestamp } from '@zettelyay/commons'
+import { Id, Timestamp } from '@zettelooo/commons'
 
 export interface User {
   readonly id: Id
