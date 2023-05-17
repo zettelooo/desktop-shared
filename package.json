@@ -1,7 +1,7 @@
 {
   "name": "@zettelooo/desktop-shared",
   "description": "Zettel: Shared between Web & Desktop",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "files": [
     "dist/**"
   ],
