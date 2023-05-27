@@ -3,7 +3,7 @@ import { Id, Timestamp } from '@zettelooo/commons'
 export interface User {
   readonly id: Id
   readonly email: string
-  readonly backgroundColor: string
+  readonly color: string
   readonly avatarFileUrl?: string
   readonly username: string
   readonly displayName: string

@@ -9,7 +9,6 @@ export enum LauncherIpcMessageType {
   ElectronSetBrowserSuggestions = 'ELECTRON_SET_BROWSER_SUGGESTIONS',
   LauncherUpdateSize = 'LAUNCHER_UPDATE_SIZE',
   LauncherOpenApp = 'LAUNCHER_OPEN_APP',
-  LauncherOpenSettingsBilling = 'LAUNCHER_OPEN_SETTINGS_BILLING',
   LauncherPasteContent = 'LAUNCHER_PASTE_CONTENT',
   LauncherGoToAccessibilitySettings = 'LAUNCHER_GO_TO_ACCESSIBILITY_SETTINGS',
   LauncherGoToAutomationSettings = 'LAUNCHER_GO_TO_AUTOMATION_SETTINGS',
@@ -48,9 +47,6 @@ export type LauncherIpcMessage<T extends LauncherIpcMessageType = LauncherIpcMes
     readonly pageId?: Id
     readonly cardId?: Id
   }
-  [LauncherIpcMessageType.LauncherOpenSettingsBilling]: {
-    readonly type: LauncherIpcMessageType.LauncherOpenSettingsBilling
-  }
   [LauncherIpcMessageType.LauncherPasteContent]: {
     readonly type: LauncherIpcMessageType.LauncherPasteContent
     readonly content: ClipboardContent
@@ -82,7 +78,6 @@ export type LauncherIpcInvokeResponse<T extends LauncherIpcMessageType = Launche
   [LauncherIpcMessageType.ElectronSetBrowserSuggestions]: never
   [LauncherIpcMessageType.LauncherUpdateSize]: never
   [LauncherIpcMessageType.LauncherOpenApp]: never
-  [LauncherIpcMessageType.LauncherOpenSettingsBilling]: never
   [LauncherIpcMessageType.LauncherPasteContent]: never
   [LauncherIpcMessageType.LauncherGoToAccessibilitySettings]: never
   [LauncherIpcMessageType.LauncherGoToAutomationSettings]: never
