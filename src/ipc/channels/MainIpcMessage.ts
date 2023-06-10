@@ -12,7 +12,7 @@ export enum MainIpcMessageType {
 export type MainIpcMessage<T extends MainIpcMessageType = MainIpcMessageType> = {
   [MainIpcMessageType.ElectronSetState]: {
     readonly type: MainIpcMessageType.ElectronSetState
-    readonly pageId?: Id
+    readonly pageId: Id
     readonly cardId?: Id
   }
   [MainIpcMessageType.ElectronSignOut]: {
