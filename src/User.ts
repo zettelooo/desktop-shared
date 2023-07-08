@@ -8,6 +8,5 @@ export interface User {
   readonly username: string
   readonly displayName: string
   readonly lastActive: Timestamp
-  readonly extensionIds: readonly Id[]
   readonly isOnboarded: boolean
 }
